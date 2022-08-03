@@ -5,7 +5,7 @@
 // либо задать на старте выполнения алгоритма.
 // Лучше пользоваться массивами, а не коллекциями.
 
-string [] firstArray = new string[3] {"hello", "2", "world" };
+string [] firstArray = new string[3] {"hi", "2", "world" };
 string [] secondArray = new string[firstArray.Length];
 
 void SecondArr(string[] firstArray, string[] secondArray)
@@ -20,3 +20,13 @@ void SecondArr(string[] firstArray, string[] secondArray)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+SecondArr(firstArray, secondArray);
+PrintArray(secondArray);
